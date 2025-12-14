@@ -1,0 +1,50 @@
+(base) nightree@nightreedeMacBook-Air kadai % cd ..  
+(base) nightree@nightreedeMacBook-Air Documents % cd git_challenge 
+(base) nightree@nightreedeMacBook-Air git_challenge % git init 
+Initialized empty Git repository in /Users/nightree/Documents/git_challenge/.git/
+(base) nightree@nightreedeMacBook-Air git_challenge % touch hello_world.txt
+(base) nightree@nightreedeMacBook-Air git_challenge % vi hello_world.txt 
+(base) nightree@nightreedeMacBook-Air git_challenge % vi hello_world.txt
+(base) nightree@nightreedeMacBook-Air git_challenge % git add .
+(base) nightree@nightreedeMacBook-Air git_challenge % git diff
+(base) nightree@nightreedeMacBook-Air git_challenge % git diff --staged
+diff --git a/hello_world.txt b/hello_world.txt
+new file mode 100644
+index 0000000..cb39a1f
+--- /dev/null
++++ b/hello_world.txt
+@@ -0,0 +1,2 @@
++
++Hello, world!
+(base) nightree@nightreedeMacBook-Air git_challenge % git commit -m "1回目のコミット"
+[main (root-commit) 9825b61] 1回目のコミット
+ 1 file changed, 2 insertions(+)
+ create mode 100644 hello_world.txt
+(base) nightree@nightreedeMacBook-Air git_challenge % git status
+On branch main
+nothing to commit, working tree clean
+(base) nightree@nightreedeMacBook-Air git_challenge % vi hello_world.txt             
+(base) nightree@nightreedeMacBook-Air git_challenge % git commit -m "2回目のコミット"
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) nightree@nightreedeMacBook-Air git_challenge % git add hello_world.txt        
+(base) nightree@nightreedeMacBook-Air git_challenge % git commit -m "2回目のコミット"
+[main 7660592] 2回目のコミット
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+(base) nightree@nightreedeMacBook-Air git_challenge % git log --onelin
+fatal: unrecognized argument: --onelin
+(base) nightree@nightreedeMacBook-Air git_challenge % git log --oneline
+7660592 (HEAD -> main) 2回目のコミット
+9825b61 1回目のコミット
+(base) nightree@nightreedeMacBook-Air git_challenge % cd ..
+(base) nightree@nightreedeMacBook-Air Documents % ls
+a1627262193495.numbers  git_challenge           kadai                   samurai-terakoya
+a1627262193495.pdf      git_tutorial            rizumu.pdf
+(base) nightree@nightreedeMacBook-Air Documents % cd kadai 
+(base) nightree@nightreedeMacBook-Air kadai % cd kadai_005 
+(base) nightree@nightreedeMacBook-Air kadai_005 % touch kadai_005.txt
